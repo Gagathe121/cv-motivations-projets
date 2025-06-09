@@ -1,0 +1,555 @@
+<!-- ++++++++++++++++++++++++    SITE CV MOTIVATION & PROJETS AURORE MULLER     ++++++++++++++++++++   -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>CV, Motivation & Projets | Aurore Muller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Future développeuse web à la recherche d'une formation"/>
+    <link rel="shortcut icon" href="images/icones/favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">      
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+    <!--   *******************************    SECTION HEADER   *************************************   -->
+    
+<header class="header">
+
+    <div class="header__container">
+
+        <div class="header__contact" aria-label="Contacter Aurore Muller">
+
+    <!-- CONTACT ICONS -->
+            <a href="mailto:auroremlr4@gmail.com" class="contact__link" aria-label="Envoyer un email à Aurore Muller">
+                <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+                <path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                </svg>
+            </a>
+                              
+            <a href="tel:+3363414267" class="contact__link" aria-label="Appeler Aurore Muller">
+                <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+                <path fill="currentColor" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                </svg>
+            </a>
+                
+            <a href="https://www.linkedin.com/in/aurore-aml/" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="Accéder au profil LinkedIn d'Aurore">
+                <svg class="social__icon" width="30" height="30" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                </svg>
+            </a>         
+        </div>
+
+    <!-- LOGO -->
+        <a href="#hero" aria-label="Bannière d'accueil du site d'Aurore Muller" class="header__logo">Aurore Muller</a> 
+
+    <!-- BURGER -->                
+        <nav class="burger__menu" role="menu" aria-label="Menu principal">
+            <button class="burger__btn" aria-label="ouvrir ou fermer le menu" aria-expanded="false" aria-controls="menu-desktop">
+                <span class="burger__text">Menu</span>
+                    <span class="burger__bars">
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                </span>
+            </button>
+
+            <div class="burger__wrap" id="menu-desktop">              
+                <ul class="burger__list list-unstyled">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#about">Qui je suis</a></li>
+                    <li><a href="#cv">Mon parcours</a></li>
+                    <li><a href="#projects">Mes réalisations</a></li>                   
+                </ul>
+            </div>           
+        </nav>         
+    </div>
+</header>
+<!--  *******************************    FIN DE SECTION HEADER   ************************************  -->
+
+<main>
+
+<!--   **********************************      SECTION ACCUEIL     **********************************  -->
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~   Mobile Only   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section id="hero-mobile" class="hero-mobile" aria-label="Page d'accueil du site d'Aurore Muller">
+
+    <div class="hero-mobile__container">
+    <!-- BULLES D ACCUEIL -->    
+        <div class="hero-mobile__grid">
+            <div class="hero-mobile__grid-item hero-mobile__grid-item--intro">
+                <a href="#hero" class="hero-mobile__link hero-mobile__link--about" aria-label="Accéder à la section d'introduction">Aurore Muller                        
+                </a>
+            </div>
+
+            <div class="hero-mobile__grid-item hero-mobile__grid-item--presentation">
+                <a href="#about" class="hero-mobile__link hero-mobile__link--presentation" aria-label="Accéder à la section A propos">Qui je suis                        
+                </a>
+            </div>
+
+            <div class="hero-mobile__grid-item hero-mobile__grid-item--parcours">
+                <a href="#cv" class="hero-mobile__link hero-mobile__link--parcours" aria-label="Accéder à la section curriculum vitae">Mon parcours
+                </a>
+            </div>
+
+            <div class="hero-mobile__grid-item hero-mobile__grid-item--realisations">
+                <a href="#projects" class="hero-mobile__link hero-mobile__link--realisations" aria-label="Accéder à la section des projets réalisés">Mes réalisations
+                </a>
+            </div>
+        </div>
+    </div>            
+</section>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~   Fin d'accueil Mobile   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Desktop Only   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<section id="hero" class="hero-desktop" role="banner" aria-label="Banniere d'accueil du site d'Aurore Muller"> 
+
+    <div class="hero-desktop__container">
+
+        <div class="hero-desktop__grid">
+        <!-- IMG -->
+            <div class="hero-desktop__grid-item hero-desktop__grid-item--left">
+                <img src="images/photo-aurore.webp" alt="Photo d'Aurore Muller, image d'accueil" width="500" height="667" class="hero-desktop__img">       
+            </div>
+        <!-- TEXTE -->
+            <div class="hero-desktop__grid-item hero-desktop__grid-item--right"> 
+                <h1 class="title">Développeuse web et web mobile</h1>
+                    <p class= "hero-desktop__intro">                                
+                    Forte d’une expérience en management et en gestion de projet, j’ai choisi de me réorienter vers le développement web.
+                    Cette voie me permet de conjuguer deux de mes passions : la création  et l'expérience utilisateur (UX), que je souhaite approfondir et valoriser dans des réalisations concrètes.
+                    À travers les projets que j’ai déjà entrepris, je me suis pleinement immergée dans l’univers du digital.</p>
+
+                    <p class= "hero-desktop__intro"> Ce site présente mon parcours, mes motivations et mes réalisations, avec l’ambition de démontrer mon sérieux et mon engagement dans cette nouvelle orientation professionnelle.
+                    Je suis déterminée à intégrer une formation qui me donnera les clés pour maîtriser les compétences techniques nécessaires et m’épanouir pleinement dans ce domaine.
+                    </p>
+            </div>
+        </div>
+    </div>        
+</section>
+         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~   Fin d'Accueil Desktop    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--   *******************************     FIN SECTION ACCUEIL     **********************************  -->
+
+
+
+
+<!--   *******************************     SECTION A PROPOS     **********************************  -->
+
+<section id="about" class="about" aria-label="À propos d'Aurore Muller">
+
+    <div class="about__container">
+
+    <!-- ICON-->        
+        <div class="cv__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" aria-hidden="true" viewBox="0 0 320 512">
+            <path fill="currentColor" d="M80 160c0-35.3 28.7-64 64-64l32 0c35.3 0 64 28.7 64 64l0 3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74l0 1.4c0 17.7 14.3 32 32 32s32-14.3 32-32l0-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7l0-3.6c0-70.7-57.3-128-128-128l-32 0C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
+            </svg>
+        </div>
+    <!-- TITRE  -->
+        <h2 class="about__title">Qui je suis</h2>                  
+    <!-- TEXTE  --> 
+        <div class="about__presentation">                    
+            <p>Depuis 2013, j’ai construit ma carrière dans le secteur automobile, d’abord en tant que commerciale puis en évoluant vers des postes de manager et de cheffe de projet. À partir de 2020, j’ai intégré une branche 100 % digitale de ce secteur où j’ai piloté les opérations liées à l’expérience client et utilisateur, en coordonnant l’amélioration d’un CRM et le travail des équipes opérationnelles, aux côtés du chef de produit et du directeur marketing. Cette expérience m’a permis de comprendre en profondeur les enjeux du digital dans un contexte professionnel.</p>
+
+            <p>En décembre 2024, j’ai réalisé un bilan de compétences qui m’a aidé à mieux cerner mes forces et aspirations. Il a notamment révélé mon profil RIASEC : Investigateur, Conventionnel et Artiste, alliant curiosité intellectuelle, sens de l’organisation et créativité.</p>
+
+            <p>Cette étape a été un déclic, car c’est à ce moment que j’ai découvert et commencé à explorer plus en profondeur le métier de développeur web, une voie qui allie parfaitement mes passions, mes ambitions et mes compétences transversales.</p>
+                
+            <p>Pendant ma période de transition professionnelle, j’ai multiplié les expériences dans le digital, en créant et animant plusieurs projets : un groupe Facebook, plusieurs comptes Instagram, et le site web d’une association.</p>
+
+            <p>Ces initiatives m’ont permis d'acquérir de nouvelles compétences techniques, tout en renforçant ma motivation à évoluer dans cet univers qui me passionne.</p>     
+        </div>
+
+    <!-- BOUTON DOWNLOAD-->
+        <div class="cover-letter__download">
+            <a href="downloads/l-m-aurore-muller.pdf" download class="btn__link" aria-label="Télécharger la lettre de motivation d'Aurore Muller">Lettre de motivation PDF</a>
+        </div>
+    </div>        
+</section>
+<!--   *****************************     FIN DE SECTION A PROPOS     **********************************  -->
+
+
+
+<!--   **********************************     SECTION CV     ***************************************  -->
+
+<section id="cv" class="cv" aria-label="Curriculum Vitae d'Aurore Muller">
+
+    <div class="cv__container">
+    <!-- ICON -->
+        <div class="cv__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" aria-hidden="true" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"/>
+            </svg>
+        </div>
+
+            <!--   -----------------------------  Compétences    ---------------------------------  -->
+        <h2 class="cv__title">Mes compétences</h2>
+    <!-- LIST HARD SKILLS -->
+            <div class="hard-skills__grid">
+
+                <h3 class="hard-skills__title">Hard Skills</h3>
+
+                    <ul class="hard-skills__list list-unstyled">
+                        <li>Gestion de projet agile
+                            <ul>
+                                <li>Utilisation d’outils collaboratifs : Airtable, Trello</li>
+                                <li>Réalisation de tests A/B</li>
+                            </ul>
+                        </li>
+                        <li>Création de documentation technique</li>
+                        <li>Analyse des besoins utilisateurs
+                            <ul>
+                                <li>Audit fonctionnel et ergonomique</li>
+                                <li>Recueil des attentes et feedbacks utilisateurs</li>
+                            </ul>
+                        </li>
+                        <li>Création de contenu digital
+                            <ul>
+                                <li>Création de visuels via Canva</li>
+                                <li>Montages vidéos sur Capcut</li>
+                                <li>Gestion des réseaux sociaux</li>
+                            </ul>
+                        </li>
+                        <li>Développement web 
+                            <ul>
+                                <li>En cours d'apprentissage</li>
+                                <li>HTML, CSS, JavaScript</li>                                
+                                <li>Git, GitHub</li>
+                                <li>Responsive Design</li>
+                                <li>UX/UI Design</li>
+                                <li>SEO et accessibilité</li>
+                            </ul>
+                        </li>
+                    </ul>               
+            </div>
+    <!-- LIST SOFT SKILLS -->
+            <div class="soft-skills__grid"> 
+
+                <h3 class="soft-skills__title">Soft skills</h3>
+
+                    <ul class="soft-skills__list list-unstyled">
+                        <li>Curiosité</li>
+                        <li>Organisation</li>
+                        <li>Autonomie</li>
+                        <li>Esprit d’équipe</li>
+                        <li>Capacité d’adaptation</li>
+                        <li>Capacité d’analyse</li>
+                        <li>Communication</li>
+                        <li>Créativité</li>
+                    </ul>                                                  
+            </div>
+
+            <!--   -----------------------------  Expériences    ---------------------------------  -->
+    
+            <div class="experiences__grid">
+
+                <div class="cv__icon" aria-hidden="true">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M512 96c0 50.2-59.1 125.1-84.6 155c-3.8 4.4-9.4 6.1-14.5 5L320 256c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96 43 96 96s-43 96-96 96l-276.4 0c8.7-9.9 19.3-22.6 30-36.8c6.3-8.4 12.8-17.6 19-27.2L416 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0c-53 0-96-43-96-96s43-96 96-96l39.8 0c-21-31.5-39.8-67.7-39.8-96c0-53 43-96 96-96s96 43 96 96zM117.1 489.1c-3.8 4.3-7.2 8.1-10.1 11.3l-1.8 2-.2-.2c-6 4.6-14.6 4-20-1.8C59.8 473 0 402.5 0 352c0-53 43-96 96-96s96 43 96 96c0 30-21.1 67-43.5 97.9c-10.7 14.7-21.7 28-30.8 38.5l-.6 .7zM128 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM416 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+                    </svg>
+                </div>
+
+            <h2 class="experiences__title">Expériences professionnelles</h2>
+
+    <!-- LIST EXPERIENCES -->
+            <ul class="experiences__list list-unstyled">
+
+                <li class="experiences__item">
+                    <h3 class="experiences__job-title">Gestionnaire marketing</h3>
+                        <div class="experiences__metadata">
+                            <span class="experiences__company">Schmidt Groupe</span> - 
+                                <time class="experiences__date" datetime="2024-09/2024-12">sept 2024 - déc 2024</time>
+                        </div>
+
+                            <ul class="experiences__description-list">
+                                <li>Retouche et préparation d’images pour la mise en ligne</li>
+                                <li>Rédaction de contenus produits assistée par intelligence artificielle</li>
+                                <li>Structuration et gestion de base de données pour chatbot IA</li>
+                                <li>Organisation et suivi d’A/B tests pour optimisation des performances</li> 
+                            </ul>
+                </li>
+
+                <li class="experiences__item">
+                    <h3 class="experiences__job-title">Cheffe de projet</h3>
+                        <div class="experiences__metadata">
+                            <span class="experiences__company">Easyreprise</span> - 
+                                <time class="experiences__date" datetime="2023-03/2024-02">mars 2023 - fév 2024</time>
+                        </div>
+
+                            <ul class="experiences__description-list">
+                                <li>Gestion et optimisation du CRM pour améliorer la productivité des équipes</li>
+                                <li>Création et mise à jour de la documentation technique pour une utilisation fluide du CRM par tous les services</li>
+                                <li>Coordination des équipes pour assurer la bonne adoption et l’efficacité du CRM</li>
+                                <li>Intervention auprès de prestataires externes pour former et accompagner l’utilisation du CRM, garantissant une intégration cohérente et efficace avec les processus internes.</li>
+                                <li>Analyse des données CRM pour identifier les points d’amélioration et les besoins des utilisateurs</li>
+                                <li>Réalisation d’audits de services pour identifier les leviers d’amélioration et proposer des process adaptés</li>
+                                <li>Mise en place d’outils et de process visant à optimiser les tâches quotidiennes et la performance globale</li>
+                            </ul>
+                </li>
+
+                <li class="experiences__item">
+                    <h3 class="experiences__job-title">Manager commerciale</h3>
+                        <div class="experiences__metadata">
+                            <span class="experiences__company">Easyreprise</span> - 
+                                    <time class="experiences__date" datetime="2020-02/2024-02">fév 2020 - fév 2023</time>
+                            </div>
+
+                            <ul class="experiences__description-list">
+                                <li>Gestion et animation de l’équipe commerciale pour atteindre les objectifs de vente</li>
+                                <li>Suivi des indicateurs clés (KPI) pour piloter l’activité et optimiser les résultats</li>
+                                <li>Intégration des nouveaux collaborateurs et suivi de leur montée en compétences</li>
+                                <li>Formation et accompagnement des commerciaux pour renforcer leurs compétences</li>
+                                <li>Analyse des performances commerciales et mise en place de plans d’action pour améliorer les résultats</li>
+                                <li>Collaboration avec les équipes marketing pour aligner les actions commerciales et les campagnes de communication</li> 
+                            </ul> 
+                </li>
+
+                <li class="experiences__item">
+                    <h3 class="experiences__job-title">Commerciale référente</h3>
+                        <div class="experiences__metadata">
+                            <span class="experiences__company">Auto 1</span> — 
+                                <time class="experiences__date" datetime="2016-02/2020-02">fév 2016 - fév 2020</time>
+                        </div>
+
+                            <ul class="experiences__description-list">
+                                <li>Gestion de la relation client pour assurer la satisfaction</li>
+                                <li>Inspection technique et reprise des véhicules d’occasion</li>
+                                <li>Formation des nouveaux collaborateurs aux pratiques techniques et commerciales</li>                                        
+                            </ul>         
+                </li>
+            </ul>
+        </div>
+
+        <!--   -----------------------------  Formations    ---------------------------------  -->
+        <div class="formations__grid">
+
+            <div class="cv__icon" aria-hidden="true">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M219.3 .5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9l0 57.1c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-57.1L48 93.3l0 65.1 15.7 78.4c.9 4.7-.3 9.6-3.3 13.3s-7.6 5.9-12.4 5.9l-32 0c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4l0-71.8C6.5 83.3 0 74.3 0 64C0 52.6 8.1 42.7 19.3 40.5l200-40zM111.9 327.7c10.5-3.4 21.8 .4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5C401 348.6 448 409.4 448 481.3c0 17-13.8 30.7-30.7 30.7L30.7 512C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6z"/>
+                </svg>
+            </div>
+
+    <!-- LIST FORMATIONS -->
+            <h2 class="formations__title">Formations</h2>
+
+            <ul class="formations__list list-unstyled">
+                <li class="formations__item">
+                    <h3 class="formations__name">Formation Num&Boost (en cours)</h3>
+                        <span class="formations__organizer">CCI Campus Alsace</span> - 
+                            <time class="formations__date" datetime="2025-05/2025-06">mai - juin 2025</time>
+                </li>
+
+                <li class="formations__item">
+                    <h3 class="formations__name">Certification Meta en ligne</h3>
+                        <span class="formations__organizer">Meta (Facebook)</span> - 
+                            <time class="formations__date" datetime="2025">2025</time>
+                </li>
+
+                <li class="formations__item">
+                    <h3 class="formations__name">Bilan de compétences</h3>
+                        <span class="formations__organizer">Senseï</span> - 
+                            <time class="formations__date" datetime="2024-12/2025-02">déc 2024 - fév 2025</time>
+                </li>
+
+                 <li class="formations__item">
+                    <h3 class="formations__name">Formation Management (interne)</h3>
+                        <span class="formations__organizer">Easyreprise</span> - 
+                            <time class="formations__date" datetime="2022-10">oct 2022</time>
+                </li>
+
+                <li class="formations__item">
+                    <h3 class="formations__name">Baccalauréat littéraire</h3>
+                        <span class="formations__organizer">Lycée Henri-Meck</span> - 
+                            <time class="formations__date" datetime="2005-06">juin 2005</time>
+                </li>                            
+            </ul>
+            </div>
+
+    <!-- BOUTON DOWLOAD -->
+            <div class="cv__download">
+                <a href="downloads/cv-2025-aurore-muller.pdf" download class="btn__link" aria-label="Télécharger le CV d'Aurore Muller">Télécharger le CV</a>
+            </div>
+    </div>
+</section>
+<!--   *******************************    FIN DE  SECTION CV     ************************************  -->
+
+
+<!--   *******************************    SECTION PROJETS     ************************************  -->
+
+<section id="projects" class="projects" aria-label="Présentation des projets Web">
+    <h2 class="finished-projects__title">Mes réalisations</h2>
+        <div class="cv__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 576 512">
+            <path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-10.7 32L160 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-69.3 0L336 416l176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 288L64 352 64 64l448 0z"/>
+            </svg>
+        </div>
+
+        <p class="finished-projects__intro"><em>Découvrez mes projets de développement Web</em></p>
+
+    <div class="projects__container">
+<!-- ----------------------------------    PROJETS FINIS    --------------------------------- -->
+        <div class="finished-projects">
+
+            <h3 class="finished-projects__subtitle">Site web no-code (Wix)</h3>
+
+    
+                <div class="finished-projects__grid">
+    <!-- IMAGES -->
+                    <div class="finished-projects__grid-item finished-projects__images-box">
+                        <div class="finished-projects__img-container">
+                            <img src="images/photo-projet-dojo-desktop.png" alt="Aperçu du site web du dojo sur ordinateur" class="finished-projects__img1" width="800" height="600" loading="lazy">
+                
+                            <img src="images/photo-projet-dojo-mobile.png" alt="Aperçu du site web du dojo sur mobile" class="finished-projects__img2" width="500" height="300" loading="lazy">
+                        </div>    
+                    </div>
+    <!-- TEXTE -->
+                    <div class="finished-projects__grid-item finished-projects__grid-item--text">
+                        <p class="finished-projects__description">Cette association sportive avait un besoin urgent de refonte complète de leur site web. J'ai conçu le nouveau site sur Wix, le CMS qu'ils utilisaient déjà pour faciliter la prise en main et la gestion interne.</p>
+
+                        <p class="finished-projects__description">L'objectif était de créer une interface claire, fluide et responsive afin de retenir les visiteurs sur le site et d'attirer de nouveaux adhérents grâce à une navigation plus intuitive.</p>
+
+                        <p class="finished-projects__description">Ce projet m'a permis d'approfondir mes connaissances en parcours utilisateur, et de me former davantage au SEO, avec l'ambition d'améliorer le référencement naturel du site.</p>
+                    </div>
+
+            <!-- BOUTON LINK  -->           
+                <a href="https://www.shodokan-kendo.com" class="btn__link" target="_blank" rel="noopener noreferrer" aria-label="Accéder au site web du dojo">Voir le site</a>
+                    
+                <h3 class="finished-projects__subtitle">Ce site de présentation professionnelle</h3>
+
+    
+                <div class="finished-projects__grid">
+    <!-- IMAGES -->
+                    <div class="finished-projects__grid-item finished-projects__images-box">
+                        <div class="finished-projects__img-container">
+                            <img src="images/photo-site-cv-desktop.png" alt="Aperçu du site web du dojo sur ordinateur" class="finished-projects__img1" width="800" height="600" loading="lazy">
+                
+                            <img src="images/photo-site-cv-mobile.png" alt="Aperçu du site web du dojo sur mobile" class="finished-projects__img2" width="500" height="300" loading="lazy">
+                        </div>    
+                    </div>
+                </div>
+    <!-- TEXTE -->
+                    <div class="finished-projects__grid-item finished-projects__grid-item--text">
+                        <p class="finished-projects__description">Dans le cadre de ma candidature à votre formation, j’ai saisi l’opportunité de créer ce site web afin de présenter mon CV, mes motivations et mes projets.</p>
+
+                        <p class="finished-projects__description">Pour concevoir ce site, je me suis appuyée sur la base de mon projet en cours réalisé pendant la formation Num&Boost. J’y ai intégré de nouveaux éléments et apporté plusieurs ajustements, en mobilisant les compétences acquises au fil de la formation.</p>
+
+                        <p class="finished-projects__description">Ce projet m’a permis de consolider mes acquis, de vérifier que j’avais bien assimilé les notions abordées, tout en explorant de nouvelles pratiques et en continuant à progresser de façon autonome.</p>
+                    </div> 
+                    
+            <!-- BOUTON LINK  -->           
+                <a href="" class="btn__link" target="_blank" rel="noopener noreferrer" aria-label="Accéder au fichier Git du site">Voir le dépôt GitHub</a>
+                </div>
+       </div>
+
+<!-- ---------------------------------   PROJETS EN COURS    -----------------------------------  --> 
+        <div class="wip-projects">
+
+            <h3 class="wip-projects__subtitle">Site web en cours de développement</h3>
+
+            <div class="wip-projects__grid">
+    <!-- VIDEO  -->   
+                <div class="wip-projects__grid-item projects__grid-item--video">
+                     <video class="wip-projects__video" width="800" height="500" controls preload="none" poster="images/logo-color-kit.png">
+                        <source src="videos/video-projet-color-kit-mobile.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                </div>
+        <!-- TEXTE  --> 
+                <div class="wip-projects__grid-item wip-projects__grid-item--text">
+                    <p class="wip-projects__description">Color Kit est un site web en cours de développement, né de mon envie de créer des outils pratiques pour les pssionné(e)s de coloriage et d'organisation.</p>
+
+                    <p class="wip-projects__description">L'objectif est de proposer des supports téléchargeables ou de rediriger les utilisateurs vers mes boutiques en ligne tout en leur assurant une expérience fluide et intuitive dans une interface claire et agréable</p>
+                    
+                    <p class="wip-projects__description">Ce projet s'inscrit dans le cadre de la formation num&boost que je suis actuellement. Il me permet de renforcer mes compétences en Html et CSS, avec une approche orientée mobile-first et UX. Je me suis même lancée des défis comme proposer une home page différente sur mobile.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--   ***************************    FIN DE  SECTION PROJETS     ************************************  -->
+
+
+<!--   *******************************    SECTION CONTACT     ****************************************  -->
+
+<section id="contact" class="contact" aria-label="Moyens de contacter Aurore Muller">
+
+    <div class="contact__container">
+
+        <h2 class="contact__title">Contact</h2>
+
+        <div class="contact__methods">
+    <!-- MAIL -->
+            <div class="contact__method" aria-label="Contact par email">
+                <a href="mailto:auroremlr4@gmail.com" class="contact__link--section" aria-label="Envoyer un email à Aurore Muller">
+                    <svg class="contact__icon--section" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>Envoyer un email
+                </a>
+            </div>
+    <!-- PHONE -->
+            <div class="contact__method" aria-label="Contact par téléphone">
+                <a href="tel:+3363414267" class="contact__link--section" aria-label="Appeler Aurore Muller">
+                    <svg class="contact__icon--section" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                    </svg>Téléphoner
+                </a>
+            </div>
+        </div>        
+    </div>
+</section>
+<!--   *******************************   FIN DE  SECTION CONTACT     *********************************  -->
+
+</main>
+
+<!--   *******************************   FOOTER     *********************************  -->
+    
+<footer class="footer">
+
+    <div class="footer__container">
+
+        <div class="footer__grid">
+
+            <div class="footer__grid-item">                
+                <h4>Accès rapide</h4>
+                <ul class="quick-links list-unstyled">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#cv">Mon parcours</a></li>
+                    <li><a href="#projects">Mes réalisations</a></li>                      
+                </ul>
+            </div>
+
+            <div class="footer__grid-item">
+              <h4>Suivez-moi sur LinkedIn</h4>
+                 <a href="https://www.linkedin.com/in/aurore-aml/" class="header__link" aria-label="Accéder au profil Linkedin d'Aurore">
+                    <svg class="social__icon--footer" width="30" height="30"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                </a>              
+            </div>
+
+            <div class="footer__grid-item">
+                <p class="footer__text">© 2025 - Tous droits réservés</p>                
+                <p class="footer__text">Design & Développement web - Aurore Muller</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--   *******************************   FIN DU FOOTER     *********************************  -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!--   °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°  END     °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°  -->

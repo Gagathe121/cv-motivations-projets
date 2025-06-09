@@ -1,0 +1,1346 @@
+/* =============================      CSS CONSTRUIT EN MOBILE FIRST     =============================== */ 
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Base - commune à tous les écrans  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+
+/* RESET CSS - enlève les valeurs définies par défaut par les navigateurs */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+font-size: 62.5%; /* 62.5% passe la police par défaut à 10px donc ensuite 1 rem = 10px */
+}
+
+body{
+    color: #56045d;
+    font-family: "poppins", sans-serif;
+    font-size: 1.8rem;
+    background: linear-gradient(90deg, #ed93e3, #f6dbec);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;     
+    margin: 0;
+    padding: 0;    
+}
+
+/* ENLEVER LES PUCES DES LISTES */
+.list-unstyled { 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+/* TITRES */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;  
+}
+
+/* TEXTES */
+p{
+   color: #681076;
+}
+
+/* LIENS */
+a {
+    text-decoration: none; /* Enlever le soulignement des liens */
+    color: inherit; /* Prendre la couleur du parent */
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ICÔNES */
+.cv__icon {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  background:linear-gradient(90deg, #e3a2d6, #ba08ba);
+  box-shadow: rgba(57, 5, 73, 0.25) 0px 50px 100px -20px, rgba(70, 4, 71, 0.3) 0px 30px 60px -30px, rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;  
+  transition: all 0.3s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cv__icon svg {
+  width: 4rem;
+  height: 4rem;
+  color: #860994; 
+}
+
+.social__icon {    
+  width: 3rem;
+  height: 3rem; 
+  color: #4a2c4d;       
+  }
+
+.social__icon:hover{
+  color: #ba08ba;  
+  }
+
+.social__icon--footer:hover{
+  color: #ba08ba;
+}
+
+.contact__icon{
+  width: 2rem;
+  height: 2rem; 
+  color: #4a2c4d;
+  }
+
+.contact__icon:hover{
+  color: #ba08ba;  
+  }
+
+/* BOUTONS */
+.btn__link {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  margin-bottom: 3rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ba08ba;
+  background: transparent;
+  border: 2px solid #ba08ba;
+  box-shadow: 0 4px 10px rgba(111, 11, 78, 0.3);
+  transition: 
+    background-color 0.3s ease, 
+    box-shadow 0.3s ease, 
+    transform 0.2s ease;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.btn__link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 15px rgba(236, 99, 202, 0.6);
+}
+
+.btn__link:active {
+  transform: scale(0.97);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.4);
+}
+
+/* BASE DESKTOP */
+@media screen and (min-width: 750px) {    
+    
+    h2 {
+        font-size: 3rem; 
+    }    
+    h3 {
+        font-size: 2.5rem;
+    }  
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Fin de la base - commune à tous les écrans  ~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Animations     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-zoom-in {
+  animation: fadeZoomIn 0.6s ease-out forwards;
+}
+
+.fade-hidden {
+  opacity: 0;
+  transform: scale(0.9);
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Fin des animations     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Section Header  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+.header {      
+  background-color: rgba(208, 73, 238, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+              rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+              rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset;
+  position: fixed;
+  bottom: 0;
+  top: auto; 
+  z-index: 1000;
+  width: 100%;
+  max-width: 100vw;       
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding: 1rem;
+  max-width: 100vw;
+  height: auto;    
+}
+
+.social__icon, .header__logo, .contact__icon {
+  display: none;
+}
+
+/* NAVIGATION */
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;    
+  gap: 2rem; 
+  width: 100%;
+  height: auto;    
+}
+
+
+
+@media screen and (min-width: 750px) {
+  
+  .header {
+    top: 0;
+    bottom: auto;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 10rem;       
+  }
+
+  /* ICONES CONTACT*/
+  .header__contact {
+    display: flex;   
+    gap: 2rem
+  }
+
+  .contact__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    width: 3rem;
+    height: 3rem;      
+  }
+
+  .social__icon {
+    display: block;                  
+  }
+
+  .contact__icon {
+    display: block;
+    width: 3rem;  
+    height: 3rem;    
+  }
+
+  /* LOGO */
+  .header__logo {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 40rem;
+    height: auto;
+    font-size: 4rem;
+    font-family: "yellowtail", cursive;
+    color: #4a2c4d;
+    font-weight: 500;               
+  }
+
+  .header__logo:hover{
+    color: #ba08ba;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Fin de la section  Header   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Burgers Menus desktop et mobile    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+.burger__menu {
+  display: block;
+}
+
+.burger__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  border: none;
+  border-radius: 4rem;
+  background-color: rgba(193, 17, 164, 0.6);
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;  
+}
+
+.burger__btn .burger__text {
+  display: none;
+}
+
+.burger__btn .burger__bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  position: relative;
+}
+
+.burger__btn .burger__bar {
+  width: 3.5rem;
+  height: 0.4rem;
+  background-color: #4a2c4d;
+  border-radius: 0.2rem;
+  transition: all 0.4s ease;
+}
+
+/* ANIMATION DU BOUTON */
+.burger__btn.active .burger__bars {
+  position: relative;
+}
+
+.burger__btn.active .burger__bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3.5rem;
+}
+
+.burger__btn.active .burger__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger__btn.active .burger__bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3.5rem;
+}
+
+/* BURGER MENU */
+.burger__wrap {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  position: fixed;
+  top: -15rem;
+  right: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  padding: 1rem;
+  z-index: 1000;
+  background-color: rgba(186, 8, 186, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+              rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+              rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset;
+}
+
+.burger__wrap.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.burger__wrap.open .burger__list {
+  display: flex;
+}
+
+.burger__list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 750px) {
+
+  .burger__btn {
+    background: none;
+  }
+
+  .burger__btn .burger__text {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "poppins", sans-serif;
+    color: #4a2c4d;
+  }
+
+  .burger__btn .burger__bar:nth-child(2) {
+    display: none;
+  }
+
+  .burger__list {
+    flex-direction: row;
+    gap: 8rem;
+    margin-left: 4rem;
+  }
+
+  .burger__wrap {
+    top: 8rem;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~   Fin des burgers menu desktop et mobile    ~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+  
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Hero-mobile section    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+.hero-mobile {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-mobile__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hero-mobile__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 16rem;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #e3a2d6, #ba08ba);
+  border-radius: 50%;
+  box-shadow:
+    rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+    rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+    rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* AGENCEMENT GRILLE */
+.hero-mobile__grid-item--intro {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+}
+
+.hero-mobile__grid-item--presentation {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+.hero-mobile__grid-item--parcours {
+  grid-column: 3 / 6;
+  grid-row: 3 / 4;
+  margin-top: -5rem;
+}
+
+.hero-mobile__grid-item--realisations {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+  margin-top: -3rem;
+}
+
+
+@media screen and (min-width: 750px) {
+  .hero-mobile {
+    display: none;
+  }
+
+  .hero-desktop {
+    display: block;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Fin de la hero-mobile section    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Hero-desktop section     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+.hero-desktop {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-desktop__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-desktop__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*IMAGE*/
+.hero-desktop__img {
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow:
+    rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+    rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+    rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeZoomIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* TITRE */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInZoom 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* INTRO */
+.hero-desktop__intro {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: center;
+  padding: 0 1rem;
+  opacity: 1; 
+  transform: none;
+}
+
+
+@media (min-width: 750px) {
+  .hero-desktop__grid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    gap: 2rem;
+  }
+
+  .hero-desktop__grid-item--left,
+  .hero-desktop__grid-item--right {
+    flex: 1;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-top: 3rem;
+    text-align: justify;  
+    animation: slideInLeft 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+    transform: translateX(50px);
+  }
+
+  .hero-desktop__intro {
+    margin-top: 3rem;
+    text-align: justify;
+    padding: 0;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInLeft 1s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+   .hero-desktop__img {
+    animation: fadeZoomIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Fin de la hero-desktop section    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Section A propos     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* TEXTE DE PRESENTATION */
+.about__presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+.about__presentation p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+
+
+@media (min-width: 750px) {
+  .about__container {
+    justify-content: center;
+  }
+
+  .about__presentation {
+    flex: 1;
+  }
+
+  .about__presentation p {
+    text-align: justify;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Fin de la section A propos   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Section Hard Skills     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+.cv {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+}
+
+.cv__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* GRID */
+.hard-skills__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hard-skills__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* LISTE */
+.hard-skills__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* LISTE PRINCIPALE */
+.hard-skills__list > li {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem;
+  max-width: 100%;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow:
+    rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+    rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+    rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* SOUS LISTE */
+.hard-skills__list > li > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  padding-left: 0;
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+
+@media (min-width: 750px) {
+
+   .hard-skills__title {
+    font-size: 2.5rem;
+  }
+
+  .hard-skills__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  .hard-skills__list > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    height: 100%;        
+  }
+
+  .hard-skills__list > li > ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  /* ORGANISATION GRILLE ASYMETRIQUE */
+  .hard-skills__list > li:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .hard-skills__list > li:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2 / 3;
+  }
+
+  .hard-skills__list > li:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+
+  .hard-skills__list > li:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .hard-skills__list > li:nth-child(5) {
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Fin de la section Hard Skills     ~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Section Soft Skils     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+.soft-skills__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour une grille flexible */
+  grid-auto-rows: auto;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 5rem 0 8rem;
+  list-style: none;
+}
+
+.soft-skills__list > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 2px;
+
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+    rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+    rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* ORGANISATION GRILLE ASYMETRIQUE*/
+.soft-skills__list > li:nth-child(1),
+.soft-skills__list > li:nth-child(4) {
+  grid-column: 1 / 3;
+}
+
+.soft-skills__list > li:nth-child(2),
+.soft-skills__list > li:nth-child(5) {
+  grid-column: 3 / 5;
+}
+
+.soft-skills__list > li:nth-child(3),
+.soft-skills__list > li:nth-child(6),
+.soft-skills__list > li:nth-child(7),
+.soft-skills__list > li:nth-child(8) {
+  grid-column: 1 / 5;
+}
+
+
+@media screen and (min-width: 750px) {
+  .soft-skills__title {
+    font-size: 2.5rem;
+  }
+
+  .soft-skills__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-inline: auto;
+    justify-items: stretch;
+  }
+
+  /* GRILLE 4 ITEMS SUR 2 LIGNES */
+  .soft-skills__list > li:nth-child(1) { grid-column: 1; grid-row: 1; }
+  .soft-skills__list > li:nth-child(2) { grid-column: 2; grid-row: 1; }
+  .soft-skills__list > li:nth-child(3) { grid-column: 3; grid-row: 1; }
+  .soft-skills__list > li:nth-child(4) { grid-column: 4; grid-row: 1; }
+
+  .soft-skills__list > li:nth-child(5) { grid-column: 1; grid-row: 2; }
+  .soft-skills__list > li:nth-child(6) { grid-column: 2; grid-row: 2; }
+  .soft-skills__list > li:nth-child(7) { grid-column: 3; grid-row: 2; }
+  .soft-skills__list > li:nth-child(8) { grid-column: 4; grid-row: 2; }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Fin de la section Soft Skills    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Section Experiences     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+.experiences__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 0;
+}
+
+.experiences__item {
+  padding: 2rem;
+  border-left: 4px solid rgba(237, 43, 191, 0.581);
+  border-radius: 8px;
+
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    rgba(57, 5, 73, 0.1) 0px 8px 16px,
+    rgba(70, 4, 71, 0.1) 0px 4px 8px,
+    rgba(52, 1, 52, 0.15) 0px -1px 4px inset;
+}
+
+.experiences__company,
+.experiences__date {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.experiences__date {
+  display: inline-block;
+}
+
+.experiences__description-list {
+  list-style: none;
+}
+
+.experiences__description-list li {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+
+@media (min-width: 750px) {
+  .experiences__title {
+    font-size: 3rem;
+  }
+
+  .experiences__job-title {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .experiences__metadata {
+    display: flex;
+    text-align: left;
+  }
+
+  .experiences__description-list {
+    text-align: left;
+    padding-left: 2rem;
+    list-style: circle;    
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Fin de la section Experiences     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Section Formations     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+.formations__grid {
+  display: grid;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.formations__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow:
+    rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+    rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+    rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+@media screen and (min-width: 750px) {
+  .formations__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .formations__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  /* ORGANISATION GRILLE ASYMETRIQUE */
+  .formations__item:nth-child(1) {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  .formations__item:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .formations__item:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+
+  .formations__item:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .formations__item:nth-child(5) {
+    grid-column: 2 / 4;
+    grid-row: 3;
+  }
+
+  .formations__item {
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~     Fin de la section Formations     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     Section Réalisations     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+/* --------------------------------FINSIHED PROJETCS------------------------------------- */
+
+.finished-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+}
+
+.finished-projects__intro {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.finished-projects__subtitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;  
+}
+
+.finished-projects__grid-item--text {
+  margin: 0 2rem 2rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.finished-projects__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.finished-projects__img1 {
+  display: none;
+}
+
+.finished-projects____img2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.btn__link{
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 750px) {
+
+  .finished-projects__intro{
+  font-size: 2.2rem;
+}
+
+  .finished-projects {
+    display: flex;          
+    justify-content: center;
+    align-items: center;  
+    width: 100%; 
+    margin-top: 10rem;   
+    margin-bottom: 8rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow:
+              rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+              rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+              rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset; 
+
+  }
+  
+  .finished-projects__img-container {
+    display: flex;          
+    justify-content: center;
+    align-items: center;  
+    width: 100%;   
+  }
+
+  .finished-projects__img1 {
+    display: flex;  
+    width: 60%;   
+    height: auto;    
+  }
+
+  .finished-projects__img2 {    
+    width: 100%;
+    max-width: 40rem;
+    height: auto;   
+  }
+
+  .finished-projects__grid-item--text {    
+    text-align: justify;
+    padding: 0 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* ------------------------------------WIP PROJECTS-------------------------------------------- */
+
+.wip-projects__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+}
+
+.wip-projects__subtitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.wip-projects__video {
+  width: 100%;
+  height: auto;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: rgba(57, 5, 73, 0.25) 0px 50px 100px -20px, 
+              rgba(70, 4, 71, 0.3) 0px 30px 60px -30px, 
+              rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset; 
+  }   
+
+.wip-projects__grid-item--text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem; 
+}
+
+
+@media (min-width: 750px) {
+  .wip-projects__grid {
+    margin-top: 8rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* égalise la hauteur des deux colonnes */
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+  .projects__grid-item--video,
+  .wip-projects__grid-item--text {    
+    flex: 1;
+    max-width: 45%;
+    margin-left: 10rem;
+  }
+  
+  .wip-projects__video {
+    width: 70%;  
+    border-radius: 1rem;
+  }
+
+  .wip-projects__grid-item--text {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: justify;
+    margin-right: 10rem;    
+  }
+
+  .wip-projects__description {
+    text-align: justify;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~    Fin de la section Réalisations     ~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Section Contact Mobile Only    ~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+.contact__container{
+  margin-top: 5rem;
+}
+
+.contact__methods{    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+.contact__link--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  margin-bottom: 5rem;
+}
+
+.contact__icon--section {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+@media (min-width: 750px) {
+  .contact{
+    display: none;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~    Fin de la section Contact     ~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Footer    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+.footer__container{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 8rem; 
+  margin-top: 8rem; 
+  background-color: rgba(106, 13, 127, 0.3);
+  backdrop-filter: blur(10px);  
+}
+
+.footer__grid-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  font-size: 1.4rem; 
+}
+
+.quick-links{
+  text-decoration: underline;
+}
+
+.quick-links li a:hover{
+   color: #ba08ba
+}
+
+.social__icon--footer{
+  display: flex;
+}
+
+
+@media (min-width: 750px) {
+
+  .footer__container{
+    margin-bottom: 0;
+    box-shadow: rgba(57, 5, 73, 0.25) 0px 50px 100px -20px,
+              rgba(70, 4, 71, 0.3) 0px 30px 60px -30px,
+              rgba(52, 1, 52, 0.35) 0px -2px 6px 0px inset;
+  }
+  .footer__grid{
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  margin:0 2rem;
+  padding: 1rem;   
+}
+
+.footer__grid-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  font-size: 1.4rem; 
+}
+  
+}
+/*  ===================================      END     ==========================================   */
